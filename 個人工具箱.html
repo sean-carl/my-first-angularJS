@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+<html>  
+  <head>  
+    <meta charset="utf-8">    
+    <title>All In Box</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular.min.js"></script>
+    <script src="js/tools.js"></script>  
+
+  </head>  
+  <body>   
+    <div>
+      <h1>All In Box</h1>
+      <h3>Find all the tools you want here!</h3>
+      <br>
+    </div>
+
+    <div ng-app="myApp" ng-controller="ToolsCtrl">
+      <label>Search:</label>
+      <input type="text" ng-model="search">
+      <hr>
+      <ul>
+        <li ng-repeat="tool in tools | filter : search">{{ tool.name }}  {{ tool.intro }}</li>
+      </ul>
+    </div>
+  </body>  
+</html>  
