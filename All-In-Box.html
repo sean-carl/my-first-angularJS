@@ -19,7 +19,11 @@
       <input type="text" ng-model="search">
       <hr>
       <ul>
-        <li ng-repeat="tool in tools | filter : search">{{ tool.name }}  {{ tool.intro }}</li>
+        <li ng-repeat="tool in tools | filter : search">
+          <img src="{{ tool.url }}" alt="">
+          <span><a href="{{ tool.link }}">{{ tool.name }}</a></span>
+          <p>{{ tool.intro }}</p>
+        </li>
       </ul>
     </div>
   </body>  
