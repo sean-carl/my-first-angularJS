@@ -1,0 +1,103 @@
+body{ 
+    margin:0px ;
+    background-color: #F7F7F7
+    }
+
+#wrapper
+    {
+    width: 900px;   /*寬度設定為900px*/
+    margin: auto;   /*版面居中對齊*/
+    font-family: "Lato","Helvetica Neue","微軟正黑體","Microsoft Yahei";
+    }
+
+#header 
+    {
+    background-color:#F7F7F7;
+    height: 150px; /*高度設定為150px*/
+    width: 900px;
+    padding:20px;  /*內距設定*/
+
+    }
+
+#content 
+    {
+    background-color:#F7F7F7;
+    font-size: 20px; /*字體大小*/
+    line-height: 1.5em;   /*字體行間為兩個字距*/
+    padding: 20px; /*文字與#content間的內距*/
+    color:#005E37; /*文字顏色設定*/
+    }
+
+#footer 
+    {    /*可不用設定寬度和高度，由文字來決定*/
+    background-color:#F7F7F7;
+    font-size: 12px; /*文字尺寸設定*/
+    line-height: 1.5em; /*文字行高設定為1.5字高*/
+    padding: 20px; /*內距設定*/
+    }
+
+.search 
+    {
+    width: 130px;
+    border: 2px solid #363636;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+    }
+
+.top {position:fixed;left:1px;top:0px;}
+
+.center
+    {
+    margin-left:auto;
+    margin-right:auto;
+    }
+
+.button
+    {
+    padding: 0;
+    list-style: none;
+
+    border-radius: 20px;
+    background-color:#24A560;	
+    width: 190px;
+    height: 260px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    
+    margin-top: 0px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+
+    }   
+.image-container
+   {
+   	width:100px;
+   	height: 100px;
+   	margin-right: auto;
+    margin-left: auto;
+   }
+.image-container img
+   {
+   	width: inherit;
+   	margin-right: auto;
+   	margin-left: auto;
+    border-radius: 50px;
+
+   }
+
+
+.text-container
+   { 
+   	padding-top: 20px;
+    padding-bottom: 20px;
+   	width: 150px;
+   	height: 150px;
+   	margin-right:auto;
+   	margin-left:auto;
+   }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>  
+<html>  
+  <head>  
+    <meta charset="utf-8">    
+    <title>Wholly Here</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular.min.js"></script>
+    <script src="tools.js"></script>  
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css"></style>
+  </head>  
+
+
+  <body>
+   <div id="wrapper">
+    
+    <div id="header">
+      <h1>Wholly Here</h1>
+      <h3>Find all the tools you want here!</h3>
+     
+    </div>
+
+    <div id="content" ng-app="myApp" ng-controller="ToolsCtrl">  
+      <div>
+        <label>Search:</label>
+        <input class="search" type="text" placeholder="#tag, tool...etc" ng-model="search">
+        <img src="image/search.png" width="15px">
+      </div>
+        <hr>
+      <button class="button" ng-repeat="tool in tools | filter : search">
+        <a href="{{ tool.link }}">
+          <div class="image-container">
+            <img src="{{ tool.url }}" alt="sorry" width="100px"><br><br>
+            <span>{{ tool.name }}</span>       
+          </div>
+        </a>
+       
+          <div class="text-container">
+            <p>{{ tool.intro }}</p>
+            <p>{{ tool.tag }}</p>
+          </div>
+      </button>
+    </div>
+    <div id="footer">
+
+      │ c02011carl@gmail.com  │ www.facebook.com/sean0806 │<br>
+      │ linkedin : c02011carl │<br>
+      │ Designed by Sean Huang @ copyright
+
+    </div>
+
+   </div>
+  </body>  
+</html>  

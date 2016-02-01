@@ -5,10 +5,19 @@
     <title>All In Box</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular.min.js"></script>
     <script src="tools.js"></script>  
+    <style type="text/css">
+
+      body {background-color: #F7F7F7}
+      h1 {background-color: #005E37}
+      h2 {background-color: transparent}
+      p {background-color: #4CD964}
+      p.no2 {background-color: gray; padding: 20px;}
+      label {background-color: #3EB866 }
+    </style>
 
   </head>  
   <body>   
-    <div>
+    <div class="top">
       <h1>All In Box</h1>
       <h3>Find all the tools you want here!</h3>
       <br>
@@ -16,13 +25,13 @@
 
     <div ng-app="myApp" ng-controller="ToolsCtrl">
       <label>Search:</label>
-      <input type="text" ng-model="search">
-      <hr>
+      <input type="text" ng-model="search"><hr>
       <ul>
         <li ng-repeat="tool in tools | filter : search">
-          <img src="{{ tool.url }}" alt="">
+          <img src="{{ tool.url }}" alt="sorry" width="100px"><br>
           <span><a href="{{ tool.link }}">{{ tool.name }}</a></span>
           <p>{{ tool.intro }}</p>
+          <p>{{ tool.tag }}</p>
         </li>
       </ul>
     </div>
