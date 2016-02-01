@@ -1,53 +1,78 @@
-<!DOCTYPE html>  
-<html>  
-  <head>  
-    <meta charset="utf-8">    
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
     <title>Wholly Here</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular.min.js"></script>
-    <script src="tools.js"></script>  
     <link rel="stylesheet" href="style.css">
-    <style type="text/css"></style>
-  </head>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
 
+<body ng-controller="ToolsCtrl">
+    <div id="wrapper">
+        <div id="header">
+            <h1>Wholly Here</h1>
+            <h3>Find all the tools you want here!</h3>
+        </div>
 
-  <body>
-   <div id="wrapper">
-    
-    <div id="header">
-      <h1>Wholly Here</h1>
-      <h3>Find all the tools you want here!</h3>
-     
+        <header id="header" class="reveal">
+          <h1><a href="index.html">Alpha</a> by HTML5 UP</h1>
+          <nav id="nav">
+              <label>Search:</label>
+              <input class="search" type="text" placeholder="#tag, tool...etc" ng-model="search">
+              <img ng-src="image/search.png" width="15px">
+          </nav>
+        </header>
+
+        <div id="content">
+            <a class="item" ng-href="{{ tool.link }}" ng-repeat="tool in tools | filter : search">
+                <div class="image-container">
+                    <img ng-src="{{ tool.url }}" alt="sorry">
+                    <p>{{ tool.name }}</p>
+                </div>
+                <div class="text-container">
+                    <p>{{ tool.intro }}</p>
+                    <span class="tag" ng-repeat="tag in tool.tags">{{ tag }}</span>
+                </div>
+            </a>
+        </div>
+
+        <section id="cta">
+
+          <h2>Sign up for beta access</h2>
+          <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
+
+          <form>
+            <div class="row uniform 50%">
+              <div class="8u 12u(mobilep)">
+                <input type="email" name="email" id="email" placeholder="Email Address">
+              </div>
+              <div class="4u 12u(mobilep)">
+                <input type="submit" value="Sign Up" class="fit">
+              </div>
+            </div>
+          </form>
+
+        </section>
+        <footer id="footer">
+          <ul class="icons">
+            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+            <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+          </ul>
+          <ul class="copyright">
+            <li> │ c02011carl@gmail.com │ www.facebook.com/sean0806 │ linkedin : c02011carl │ Designed by Sean Huang @ copyright© Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
+          </ul>
+        </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="tools.js"></script>
+</body>
 
-    <div id="content" ng-app="myApp" ng-controller="ToolsCtrl">  
-      <div>
-        <label>Search:</label>
-        <input class="search" type="text" placeholder="#tag, tool...etc" ng-model="search">
-        <img src="image/search.png" width="15px">
-      </div>
-        <hr>
-      <button class="button" ng-repeat="tool in tools | filter : search">
-        <a href="{{ tool.link }}">
-          <div class="image-container">
-            <img src="{{ tool.url }}" alt="sorry" width="100px"><br><br>
-            <span>{{ tool.name }}</span>       
-          </div>
-        </a>
-       
-          <div class="text-container">
-            <p>{{ tool.intro }}</p>
-            <p>{{ tool.tag }}</p>
-          </div>
-      </button>
-    </div>
-    <div id="footer">
-
-      │ c02011carl@gmail.com  │ www.facebook.com/sean0806 │<br>
-      │ linkedin : c02011carl │<br>
-      │ Designed by Sean Huang @ copyright
-
-    </div>
-
-   </div>
-  </body>  
-</html>  
+</html>

@@ -5,7 +5,7 @@ app.controller('ToolsCtrl', function($scope) {
         "intro": "不只能讓您估算銷售量和轉換率，還能提供最新的分析資料，方便您瞭解訪客如何使用您的網站、他們如何前來，以及如何吸引他們持續回訪",
         "link": "http://www.google.com/analytics",
         "url": "image/GA.jpg",
-        "tag":"#web #analytics"
+        "tags": ["web", "analytics"]
     }, {
         "name": "mixpanel",
         "intro": "世界最先進的行動或網頁分析平台",
