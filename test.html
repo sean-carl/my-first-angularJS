@@ -14,11 +14,11 @@
 <body ng-controller="ToolsCtrl" class="landing">
     <div id="wrapper">
         <header id="header" class="alt">
-            <h1><a href="index.html">Alpha</a> by HTML5 UP</h1>
+            <h1><a href="index.html"> Wholly Here</a></h1>
             <nav id="nav">
                 <ul>
-                    <li style="white-space: nowrap;"><a href="index.html">Home</a></li>
-                    <li class="opener" style="-webkit-user-select: none; cursor: pointer; white-space: nowrap;">
+                    <!-- <li style="white-space: nowrap;"><a href="index.html"></a></li> -->
+                    <!-- <li class="opener" style="-webkit-user-select: none; cursor: pointer; white-space: nowrap;">
                         <a href="#" class="icon fa-angle-down">Layouts</a>
                         <ul class="" style="-webkit-user-select: none; display: none; position: absolute;">
                             <li style="white-space: nowrap;"><a href="generic.html" style="display: block;">Generic</a></li>
@@ -34,15 +34,15 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li style="white-space: nowrap;"><a href="#" class="button">Sign Up</a></li>
+                    </li> -->
+                    <li style="white-space: nowrap;"><input class="search" type="text" placeholder="#tag, tool...etc" ng-model="search"></li>
                 </ul>
             </nav>
         </header>
 
         <section id="banner">
-          <h2>Alpha</h2>
-          <p>Another fine responsive site template freebie by HTML5 UP.</p>
+          <h2>Wholly Here</h2>
+          <p>Find all the tools you want here! </p>
           <ul class="actions">
             <li><a href="#" class="button special">Sign Up</a></li>
             <li><a href="#" class="button">Learn More</a></li>
@@ -90,26 +90,15 @@
           </section>
 
           <div class="row">
-            <div class="6u 12u(narrower)">
+            <div class="6u 12u(narrower)" ng-repeat="tool in tools | filter : search" >
 
               <section class="box special">
-                <span class="image featured"><img src="http://html5up.net/uploads/demos/alpha/images/pic02.jpg" alt=""></span>
-                <h3>Sed lorem adipiscing</h3>
-                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+                <span class="image featured"><a ng-href="{{ tool.link }}"><img ng-src="{{ tool.url }}" alt=""></a></span>
+                <h3>{{ tool.name }}</h3>
+                <p>{{ tool.intro }}</p>
+                <!-- <span class="tag" ng-repeat="tag in tool.tags">#{{ tag }} </span> -->
                 <ul class="actions">
-                  <li><a href="#" class="button alt">Learn More</a></li>
-                </ul>
-              </section>
-
-            </div>
-            <div class="6u 12u(narrower)">
-
-              <section class="box special">
-                <span class="image featured"><img src="http://html5up.net/uploads/demos/alpha/images/pic03.jpg" alt=""></span>
-                <h3>Accumsan integer</h3>
-                <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-                <ul class="actions">
-                  <li><a href="#" class="button alt">Learn More</a></li>
+                  <li><a ng-href="{{ tool.link }}" class="button alt">Learn More</a></li>
                 </ul>
               </section>
 
@@ -123,23 +112,11 @@
                 <h3>Find all the tools you want here!</h3>
             </div>
             <div class="right">
-                <label>Search:</label>
+                <label></label>
                 <input class="search" type="text" placeholder="#tag, tool...etc" ng-model="search">
                 <img ng-src="image/search.png" width="15px">
             </div>
         </header> -->
-        <div id="content">
-            <a class="item" ng-href="{{ tool.link }}" ng-repeat="tool in tools | filter : search">
-                <div class="image-container">
-                    <img ng-src="{{ tool.url }}" alt="sorry">
-                    <p>{{ tool.name }}</p>
-                </div>
-                <div class="text-container">
-                    <p>{{ tool.intro }}</p>
-                    <span class="tag" ng-repeat="tag in tool.tags">#{{ tag }} </span>
-                </div>
-            </a>
-        </div>
         <section id="cta">
             <h2>Suscribe for new beta</h2>
             <p>取得最新的好用工具</p>

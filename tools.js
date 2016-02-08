@@ -288,17 +288,5 @@ app.controller('ToolsCtrl', function($scope) {
         "link": "http://uxtimeline.com/",
         "url": "image/uxtimeline.jpeg",
         "tag":["UX","timeline","UI"]
-    }, {
-        "name": "",
-        "intro": "",
-        "link": "",
-        "url": "",
-        "tag":""
-    }, {
-        "name": "",
-        "intro": "",
-        "link": "",
-        "url": "",
-        "tag":""
     }];
 });
