@@ -7,25 +7,50 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="http://html5up.net/assets/css/main.css">
+    <link rel="stylesheet" href="http://html5up.net/uploads/demos/alpha/assets/css/main.css">
+    <link rel="stylesheet" href="http://html5up.net/uploads/demos/alpha/assets/css/font-awesome.min.css">
 </head>
 
 <body ng-controller="ToolsCtrl">
     <div id="wrapper">
-  <header id="demo-header">
-        <div class="left">
-            <h1><span>Wholly Here</span></h1>
-            <h3>Find all the tools you want here!</h3>
-        </div>
-        <div class="right">
-              <label>Search:</label>
-              <input class="search" type="text" placeholder="#tag, tool...etc" ng-model="search">
-              <img ng-src="image/search.png" width="15px">
-        </div>    
-        
-  </header>
-          
-
+        <header id="header" class="reveal">
+            <h1><a href="index.html">Alpha</a> by HTML5 UP</h1>
+            <nav id="nav">
+                <ul>
+                    <li style="white-space: nowrap;"><a href="index.html">Home</a></li>
+                    <li class="opener" style="-webkit-user-select: none; cursor: pointer; white-space: nowrap;">
+                        <a href="#" class="icon fa-angle-down">Layouts</a>
+                        <ul class="" style="-webkit-user-select: none; display: none; position: absolute;">
+                            <li style="white-space: nowrap;"><a href="generic.html" style="display: block;">Generic</a></li>
+                            <li style="white-space: nowrap;"><a href="contact.html" style="display: block;">Contact</a></li>
+                            <li style="white-space: nowrap;"><a href="elements.html" style="display: block;">Elements</a></li>
+                            <li class="opener" style="-webkit-user-select: none; cursor: pointer; white-space: nowrap;">
+                                <a href="#" style="display: block;">Submenu</a>
+                                <ul style="-webkit-user-select: none; display: none; position: absolute;" class="dropotron">
+                                    <li style="white-space: nowrap;"><a href="#" style="display: block;">Option One</a></li>
+                                    <li style="white-space: nowrap;"><a href="#" style="display: block;">Option Two</a></li>
+                                    <li style="white-space: nowrap;"><a href="#" style="display: block;">Option Three</a></li>
+                                    <li style="white-space: nowrap;"><a href="#" style="display: block;">Option Four</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="white-space: nowrap;"><a href="#" class="button">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+<!--         <header id="demo-header">
+            <div class="left">
+                <h1><span>Wholly Here</span></h1>
+                <h3>Find all the tools you want here!</h3>
+            </div>
+            <div class="right">
+                <label>Search:</label>
+                <input class="search" type="text" placeholder="#tag, tool...etc" ng-model="search">
+                <img ng-src="image/search.png" width="15px">
+            </div>
+        </header> -->
         <div id="content">
             <a class="item" ng-href="{{ tool.link }}" ng-repeat="tool in tools | filter : search">
                 <div class="image-container">
@@ -38,42 +63,45 @@
                 </div>
             </a>
         </div>
-
         <section id="cta">
-
-          <h2>Suscribe for new beta</h2>
-          <p>取得最新的好用工具</p>
-
-          <form>
-            <div class="row uniform 50%">
-              <div>
-                <input type="email" name="email" id="email" placeholder="Email Address">
-              </div>
-              <div>
-                <input type="submit" value="Sign Up" class="fit">
-              </div>
-            </div>
-          </form>
-
+            <h2>Suscribe for new beta</h2>
+            <p>取得最新的好用工具</p>
+            <form>
+                <div class="row uniform 50%">
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Email Address">
+                    </div>
+                    <div>
+                        <input type="submit" value="Sign Up" class="fit">
+                    </div>
+                </div>
+            </form>
         </section>
         <footer id="footer">
-          <ul class="icons">
-            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-            <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-            <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-          </ul>
-          <ul class="copyright">
-            <li> │ c02011carl@gmail.com │ www.facebook.com/sean0806 │ linkedin : c02011carl │ Designed by Sean Huang copyright© All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
-          </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+                <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+                <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li> │ c02011carl@gmail.com │ www.facebook.com/sean0806 │ linkedin : c02011carl │ Designed by Sean Huang copyright© All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                <li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
+            </ul>
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular.min.js"></script>
     <script src="tools.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://html5up.net/uploads/demos/alpha/assets/js/jquery.dropotron.min.js"></script>
+    <script src="http://html5up.net/uploads/demos/alpha/assets/js/jquery.scrollgress.min.js"></script>
+    <script src="http://html5up.net/uploads/demos/alpha/assets/js/util.js"></script>
+    <script src="http://html5up.net/uploads/demos/alpha/assets/js/skel.min.js"></script>
+    <script src="http://html5up.net/uploads/demos/alpha/assets/js/main.js"></script>
 </body>
 
 </html>
