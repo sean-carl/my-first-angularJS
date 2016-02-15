@@ -13,49 +13,33 @@
 <body ng-controller="ToolsCtrl">
     <div id="wrapper">
 
+<!-- codepen navbar  -->
 
-<!-- header by bootstrap -->        
-<nav class="navbar navbar-default">
-  <div class="container-fluid" style="background-color: #FFFFFF" >
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Wholly Here</a>
-      <p class="navbar-text">Find all you want here!</p>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,900,800,700' rel='stylesheet' type='text/css'>
 
+<div id="navbar">
+  <div class="container">
+  <div class="logo">Wholly Here</div>
+<div id="nav-colapse">
+  MENU
+</div>  
+  <nav class="nope">
+    <ul>
+      <li>home</li>
+      <li>about</li>
+      <li>vision</li>
+      <li>services</li>
+      <li>contact</li>
+    </ul> 
+  </nav>
     </div>
+</div>
+<div class="hero"></div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-left" role="search" style="padding:5px">
-        <div class="form-group">
-          <img ng-src="image/search.png" width="12px">
-          <label>:</label>
-          <input type="text" class="form-control" placeholder="#tag, tool...etc" ng-model="search">
-        </div>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<!-- header by bootstrap -->        
+
+
+<!-- codepen navbar  -->
+
 
         <div id="content">
             <a class="item" ng-href="{{ tool.link }}" ng-repeat="tool in tools | filter : search">
