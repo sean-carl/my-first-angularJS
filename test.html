@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <title>Wholly Here</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
+    
 </head>
 
 <body ng-controller="ToolsCtrl">
@@ -72,13 +73,13 @@
 
         <section id="cta">
 
-          <h2>Suscribe for new beta</h2>
-          <p>取得最新的好用工具</p>
+          <h2>有其他推薦的好工具？</h2>
+          <p>歡迎告訴我們，或是給予我們任何建議！</p>
 
           <form>
             <div class="row uniform 50%">
               <div>
-                <input type="email" name="email" id="email" placeholder="Email Address">
+                <input type="email" name="email" id="email" placeholder="工具名稱">
               </div>
               <div>
                 <input type="submit" value="Sign Up" class="fit">
@@ -92,19 +93,31 @@
             <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
             <li><a href="https://www.facebook.com/sean0806" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
             <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-            <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+            <li><a href="https://github.com/sean-carl" class="icon fa-github"><span class="label">Github</span></a></li>
             <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
           </ul>
           <ul class="copyright">
-            <li> Designed by Sean Huang © All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
+            <li> Designed by Sean Huang © All rights reserved.</li>
           </ul>
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular.min.js"></script>
-    <script src="tools.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.jqgoogleforms.min.js"></script>
+    <script src="tools.js"></script>
 </body>
+    
+    <script type="text/javascript">
+    var googleForm = $(window).jqGoogleForms({"formKey": "1E6SM9tnEZof3vA5IyAveDWXXO90WLiLHyYTNL1VzTiQ"});
+
+    googleForm.sendFormData({
+         "entry.3991416": $("#toolname").val(),
+         "entry.1241180420":$("").val(),
+         "entry.2037533483":$("").val(),
+         "entry.1497498012":$("").val(),
+    });
+    </script>
 
 </html>
