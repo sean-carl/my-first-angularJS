@@ -63,6 +63,24 @@ app.controller('ToolsCtrl', function($scope) {
         "url": "image/statista.jpg",
         "tag":["market research", "statistics"]
     }, {
+        "name": "PwC",
+        "intro": "全球四大會計事務所之一，利用全球會計資源統整的reserch報告很值得參考！",
+        "link": "http://www.pwc.com/gx/en/research-insights.html",
+        "url": "image/pwc.png",
+        "tag":["market research"]
+    }, {
+        "name": "Goldman Sachs",
+        "intro": "全球最頂尖的投資顧問公司，當然也是查詢產業與市場資料的好地方！",
+        "link": "http://www.goldmansachs.com/investor-relations/financials/index.html",
+        "url": "image/goldmansachs.png",
+        "tag":["market research"]
+    }, {
+        "name": "Google Finance",
+        "intro": "不想被關鍵字廣告洗版的話，推薦Google Finance!",
+        "link": "https://www.google.com/finance",
+        "url": "image/googlefinance.jpg",
+        "tag":["market research"]
+    }, {
         "name": "Google Trends",
         "intro": "獲取全球搜索的洞察趨勢",
         "link": "https://www.google.com/trends",
@@ -297,16 +315,10 @@ app.controller('ToolsCtrl', function($scope) {
         "url": "image/uxtimeline.jpeg",
         "tag":["UX","timeline","UI"]
     }, {
-        "name": "",
-        "intro": "",
+        "name": "Colorhunt",
+        "intro": "發現和分享色彩的好地方",
         "link": "http://colorhunt.co/",
-        "url": "",
-        "tag":""
-    }, {
-        "name": "",
-        "intro": "",
-        "link": "",
-        "url": "",
-        "tag":""
+        "url": "image/colorhunt.png",
+        "tag":["design","UI"]
     }];
 });
