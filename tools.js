@@ -228,7 +228,7 @@ app.controller('ToolsCtrl', function($scope) {
         "name": "flaticon",
         "intro": "最大的向量圖資料庫",
         "link": "http://www.flaticon.com/",
-        "url": "image/flaticon.png",
+        "url": "image/flaticon.jpg",
         "tag":["visualization", "icon"]
     }, {
         "name": "Chartico",
