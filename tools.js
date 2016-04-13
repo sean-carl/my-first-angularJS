@@ -320,5 +320,29 @@ app.controller('ToolsCtrl', function($scope) {
         "link": "http://colorhunt.co/",
         "url": "image/colorhunt.png",
         "tag":["design","UI"]
+    }, {
+        "name": "Slideshare",
+        "intro": "全世界的知識都以投影片的形式聚集在這裡了",
+        "link": "http://www.slideshare.net/",
+        "url": "image/slideshare.png",
+        "tag":["market research"]
+    }, {
+        "name": "",
+        "intro": "",
+        "link": "",
+        "url": "",
+        "tag":[""]
+    }, {
+        "name": "",
+        "intro": "",
+        "link": "",
+        "url": "",
+        "tag":[""]
+    }, {
+        "name": "",
+        "intro": "",
+        "link": "",
+        "url": "",
+        "tag":[""]
     }];
 });
