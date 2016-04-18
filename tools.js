@@ -63,6 +63,12 @@ app.controller('ToolsCtrl', function($scope) {
         "url": "image/statista.jpg",
         "tag":["market research", "statistics"]
     }, {
+        "name": "MIT Technolgy Review",
+        "intro": "世界一流學府的科技文章或報導就在他自己的網站裡！",
+        "link": "https://www.technologyreview.com/",
+        "url": "image/mit.jpg",
+        "tag":["#market research"]
+    }, {
         "name": "PwC",
         "intro": "全球四大會計事務所之一，利用全球會計資源統整的reserch報告很值得參考！",
         "link": "http://www.pwc.com/gx/en/research-insights.html",
@@ -326,12 +332,6 @@ app.controller('ToolsCtrl', function($scope) {
         "link": "http://www.slideshare.net/",
         "url": "image/slideshare.png",
         "tag":["market research"]
-    }, {
-        "name": "",
-        "intro": "",
-        "link": "",
-        "url": "",
-        "tag":[""]
     }, {
         "name": "",
         "intro": "",
