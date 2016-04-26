@@ -333,11 +333,11 @@ app.controller('ToolsCtrl', function($scope) {
         "url": "image/slideshare.png",
         "tag":["market research"]
     }, {
-        "name": "",
-        "intro": "",
-        "link": "",
-        "url": "",
-        "tag":[""]
+        "name": "球來就打 SEO網站優化工具",
+        "intro": "來自SEO領導品牌awoo十年專業技術，深度診斷52項SEO關鍵問題，一次突破網站優化盲點。電商與品牌網站，都好用。",
+        "link": "https://www.awoo.org/poa",
+        "url": "image/awoo.jpg",
+        "tag":["SEO","analytics"]
     }, {
         "name": "",
         "intro": "",
