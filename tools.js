@@ -339,9 +339,9 @@ app.controller('ToolsCtrl', function($scope) {
         "url": "image/awoo.jpg",
         "tag":["SEO","analytics"]
     }, {
-        "name": "",
+        "name": "kickofflabs",
         "intro": "",
-        "link": "",
+        "link": "https://kickofflabs.com/",
         "url": "",
         "tag":[""]
     }];
