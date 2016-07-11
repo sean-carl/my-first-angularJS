@@ -6,6 +6,14 @@ $( '#nav-colapse').click(function() {
 /* navbar */
 
 
+function testfunction(){
+    amplitude.logEvent('test');
+    console.log("click");
+}
+/*test*/
+
+
+
 var app = angular.module('myApp', []);
 app.controller('ToolsCtrl', function($scope) {
     $scope.tools = [{
