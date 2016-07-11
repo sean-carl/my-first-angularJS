@@ -6,6 +6,22 @@ $( '#nav-colapse').click(function() {
 /* navbar */
 
 
+
+/*indexready*/
+
+$(function(){
+document.ready(function(){
+   amplitude.logEvent('index');
+   console.log("ready");
+}
+});
+});
+
+/*indexready*/
+
+
+/*test*/
+
 function testfunction(){
     amplitude.logEvent('test');
     console.log("click");
