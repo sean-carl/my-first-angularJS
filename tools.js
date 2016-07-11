@@ -10,7 +10,7 @@ $( '#nav-colapse').click(function() {
 /*indexready*/
 
 $(function(){
-    document.ready(function(){
+    $(document).ready(function(){
     amplitude.logEvent('index');
     console.log("ready");
     });
