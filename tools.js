@@ -32,8 +32,21 @@ $(function(){
     });
 });
 
-/*indexready*/
+$(function(){
+    $(document).ready(function(){
+        if (getUrlParameter('utm_source') === 'g') {
+            amplitude.logEvent('g');    
+            console.log("ready");
+        }
+    });
+});
 
+
+$(function(){
+    $(document).ready(function(){
+            amplitude.logEvent('index');    
+    });
+});
 
 /*test*/
 
